@@ -1,0 +1,16 @@
+.loader-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 4px; /* Высота линии загрузки */
+   background-color: rgba(255, 255, 255, 0.1); /* Легкий фон */
+   z-index: 9999;
+   overflow: hidden;
+ }
+ 
+ .loader-line {
+   height: 100%;
+   background-color: #4caf50; /* Цвет линии загрузки */
+   transition: width 0.2s ease-out; /* Плавность движения линии */
+ }

@@ -1,0 +1,17 @@
+.custom-cursor {
+   position: fixed;
+   width: 20px; /* Размер курсора */
+   height: 20px;
+   border: 2px solid red; /* Цвет и стиль курсора */
+   border-radius: 50%; /* Делаем круг */
+   pointer-events: none; /* Курсор не должен взаимодействовать с элементами */
+   transform: translate(-50%, -50%); /* Центрируем элемент по точке */
+   z-index: 9999; /* Поверх всех элементов */
+   transition: transform 0.1s ease-out; /* Плавное движение */
+   background-color: red;
+ }
+ 
+ .custom-cursor.active {
+   transform: translate(-50%, -50%) scale(1.5); /* Увеличиваем при взаимодействии */
+   background-color: rgba(255, 87, 51, 0.3);
+ }
